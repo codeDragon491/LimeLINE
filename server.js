@@ -181,8 +181,8 @@ app.get('/LimeLINE/activate/:token', (req, res) => {
 /**************** FACEBOOK LOGIN ***********************/
 
 passport.use(new FacebookTokenStrategy({
-    clientID: '186453582058048', //FACEBOOK_APP_ID // 562353024149441
-    clientSecret: '36ccf4c62830eef75a2cacf7cfcefd8d', //FACEBOOK_APP_SECRET 8b3d5b9923bda272239d3304f1b923ce
+    clientID: //FACEBOOK_APP_ID
+    clientSecret: //FACEBOOK_APP_SECRET 
     profileFields: ['id', 'name', 'photos', 'emails']
 }, function (accessToken, refreshToken, profile, done) {
     let user = {
